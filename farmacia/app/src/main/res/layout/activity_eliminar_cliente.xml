@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".EliminarCliente">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="619dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ELIMINAR ESTUDIANTE"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="36sp" />
+
+        <EditText
+            android:id="@+id/busUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+        android:hint="Usuario"
+        android:inputType="text"
+        android:paddingTop="40dp"/>
+
+        <Button
+            android:id="@+id/busBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Buscar" />
+
+
+        <EditText
+            android:id="@+id/busNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:textColor="@android:color/background_dark"
+            android:textSize="35sp" />
+        android:hint="Nombre"
+        android:inputType="text" />
+
+        <EditText
+            android:id="@+id/busApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:textColor="@android:color/background_dark"
+            android:textSize="35sp" />
+        android:hint="Apellido"
+        android:inputType="text" />
+
+        <EditText
+            android:id="@+id/busUsuarioo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:textColor="@android:color/background_dark"
+            android:textSize="35sp" />
+        android:hint="Usuario"
+        android:inputType="text" />
+
+        <EditText
+            android:id="@+id/busAcademico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:textColor="@android:color/background_dark"
+            android:textSize="35sp" />
+        android:hint="Nivel Acádemico"
+        android:inputType="text" />
+
+        <Button
+            android:id="@+id/busEliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Eliminar" />
+
+
+    </LinearLayout>
+</FrameLayout>

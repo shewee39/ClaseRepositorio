@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo4"
+    tools:context=".EditarCliente">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="351dp"
+            android:layout_height="583dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ediCodigo"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:enabled="false"
+                android:fontFamily="sans-serif-black"
+                android:hint="Código"
+                android:drawableLeft="@drawable/codigoicono"
+                android:textColor="#FF0000"
+                android:background="@drawable/custom_text"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ediNombreCliente"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ediCodigo"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_text"
+                android:enabled="false"
+                android:fontFamily="sans-serif-black"
+                android:hint="Nombre Cliente"
+                android:drawableLeft="@drawable/clienteicono"
+                android:textColor="#FF0000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ediApellidoCliente"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ediNombreCliente"
+                android:layout_marginTop="15dp"
+                android:enabled="false"
+                android:fontFamily="sans-serif-black"
+                android:background="@drawable/custom_text"
+                android:hint="Teléfono Cliente"
+                android:drawableLeft="@drawable/telefonoicono"
+                android:textColor="#FF0000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ediDpi"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_text"
+                android:layout_below="@+id/ediApellidoCliente"
+                android:layout_marginTop="15dp"
+                android:enabled="false"
+                android:fontFamily="sans-serif-black"
+                android:hint="DPI"
+                android:drawableLeft="@drawable/dpiicono"
+                android:textColor="#FF0000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ediPuntosClienteActual"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ediDpi"
+                android:background="@drawable/custom_text"
+                android:layout_marginTop="15dp"
+                android:enabled="false"
+                android:fontFamily="sans-serif-black"
+                android:hint="Puntos"
+                android:drawableLeft="@drawable/puntosicono"
+                android:textColor="#FF0000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/ediPuntosCanjear"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ediPuntosClienteActual"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-black"
+                android:background="@drawable/custom_text"
+                android:hint="Canjear Puntos"
+                android:drawableLeft="@drawable/canjearicono"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="#FF0000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/ediBuscarScanner"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ediPuntosCanjear"
+                android:layout_marginTop="15dp"
+                android:text="SCANNER"
+                android:background="@drawable/custom_button"/>
+
+            <Button
+                android:id="@+id/ediBuscar"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ediBuscarScanner"
+                android:layout_marginTop="15dp"
+                android:text="BUSCAR"
+                android:background="@drawable/custom_button"/>
+
+            <Button
+                android:id="@+id/ediCanjear"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ediBuscar"
+                android:layout_marginTop="15dp"
+                android:text="CANJEAR PUNTOS"
+                android:background="@drawable/custom_button"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

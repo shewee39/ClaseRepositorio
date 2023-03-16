@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
+    tools:context=".AgregarCliente">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="353dp"
+            android:layout_height="686dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/resultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-black"
+                android:hint="Código"
+                android:background="@drawable/custom_text"
+                android:textColor="#FF0000"
+                android:drawableLeft="@drawable/codigoicono"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nombreCliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resultado"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/clienteicono"
+                android:fontFamily="sans-serif-black"
+                android:hint="Nombre Cliente"
+                android:background="@drawable/custom_text"
+                android:textColor="#FF0000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/apellidoCliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nombreCliente"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-black"
+                android:background="@drawable/custom_text"
+                android:hint="Teléfono Cliente"
+                android:drawableLeft="@drawable/telefonoicono"
+                android:inputType="number"
+                android:maxLength="8"
+                android:textColor="#FF0000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/dpiCliente"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/apellidoCliente"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_text"
+                android:ems="10"
+                android:fontFamily="sans-serif-black"
+                android:hint="DPI"
+                android:drawableLeft="@drawable/dpiicono"
+                android:inputType="number"
+                android:textColor="#FF0000"
+                android:maxLength="13"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/puntosCliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dpiCliente"
+                android:background="@drawable/custom_text"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-black"
+                android:hint="Asignar Puntos"
+                android:drawableLeft="@drawable/puntosicono"
+                android:inputType="number"
+                android:textColor="#FF0000"
+                android:maxLength="3"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/scanear"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/puntosCliente"
+                android:layout_marginTop="15dp"
+                android:text="SCANEAR CODIGO"
+                android:background="@drawable/custom_button"/>
+
+            <Button
+                android:id="@+id/guardar"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scanear"
+                android:layout_marginTop="15dp"
+                android:text="REGISTRAR CLIENTE"
+                android:background="@drawable/custom_button"/>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

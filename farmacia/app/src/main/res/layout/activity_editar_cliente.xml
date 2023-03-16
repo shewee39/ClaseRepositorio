@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo5"
+    tools:context=".EditarCliente">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="342dp"
+            android:layout_height="654dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ediCodigo"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:enabled="false"
+                android:fontFamily="sans-serif-black"
+                android:hint="Código"
+                android:drawableLeft="@drawable/codigoicono"
+                android:background="@drawable/custom_text"
+                android:textColor="#FF0000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ediNombreCliente"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ediCodigo"
+                android:drawableLeft="@drawable/clienteicono"
+                android:layout_marginTop="15dp"
+                android:enabled="false"
+                android:fontFamily="sans-serif-black"
+                android:background="@drawable/custom_text"
+                android:hint="Nombre Cliente"
+                android:textColor="#FF0000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ediApellidoCliente"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_text"
+                android:layout_below="@+id/ediNombreCliente"
+                android:layout_marginTop="15dp"
+                android:enabled="false"
+                android:fontFamily="sans-serif-black"
+                android:hint="Teléfono Cliente"
+                android:drawableLeft="@drawable/telefonoicono"
+                android:textColor="#FF0000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editdpi"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ediApellidoCliente"
+                android:background="@drawable/custom_text"
+                android:layout_marginTop="15dp"
+                android:enabled="false"
+                android:fontFamily="sans-serif-black"
+                android:hint="DPI cliente"
+                android:drawableLeft="@drawable/dpiicono"
+                android:textColor="#FF0000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ediPuntosCliente"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editdpi"
+                android:layout_marginTop="15dp"
+                android:enabled="false"
+                android:background="@drawable/custom_text"
+                android:fontFamily="sans-serif-black"
+                android:hint="Puntos Acumulados"
+                android:drawableLeft="@drawable/puntosicono"
+                android:textColor="#FF0000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ediPuntosNuevos"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ediPuntosCliente"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-black"
+                android:background="@drawable/custom_text"
+                android:hint="Asignar Puntos"
+                android:drawableLeft="@drawable/puntosicono"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="#FF0000"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/ediBuscarScanner"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ediPuntosNuevos"
+                android:layout_marginTop="15dp"
+                android:text="SCANNER"
+                android:background="@drawable/custom_button"/>
+
+            <Button
+                android:id="@+id/ediBuscar"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ediBuscarScanner"
+                android:layout_marginTop="15dp"
+                android:text="BUSCAR"
+                android:background="@drawable/custom_button"/>
+
+            <Button
+                android:id="@+id/ediAsignar"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ediBuscar"
+                android:layout_marginTop="15dp"
+                android:text="ASIGNAR PUNTOS"
+                android:background="@drawable/custom_button"/>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>
